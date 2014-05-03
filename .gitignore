@@ -1,5 +1,11 @@
-.bundle/
 log/*.log
 pkg/
 spec/dummy/
+Gemfile.lock
 
+*.gem
+.bundle
+*.lock
+pkg/*
+.ruby-version
+.DS_Store

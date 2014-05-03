@@ -133,9 +133,9 @@ module RotRails::Text
 					index = nextIndex
 				end
 
-				if (index != nil) #* break at space within this one */
+				if (index != -1) #* break at space within this one */
 					token[:value] = self.breakInsideToken(tokens, i, index, true)
-				elsif (lastTokenWithSpace != nil)  # /* is there a previous token where a break can occur? */
+				elsif (lastTokenWithSpace != -1)  # /* is there a previous token where a break can occur? */l
 					token = tokens[lastTokenWithSpace]
 					breakIndex = token[:value].rindex(" ")
 					token[:value] = self.breakInsideToken(tokens, lastTokenWithSpace, breakIndex, true)
@@ -192,7 +192,7 @@ module RotRails::Text
 		}
 		newTextToken = {
 			type: TYPE_TEXT,
-			value: tokens[tokenIndex][:value][breakIndex + (removeBreakChar ? 1 : 0)]
+			value: tokens[tokenIndex][:value][breakIndex + (removeBreakChar ? 1 : 0), tokens[tokenIndex][:value].length - breakIndex]
 		}
 		#puts "newBreakToken: #{newBreakToken} newTextToken: #{newTextToken}"
 		tokens[tokenIndex+1, 0] = [newBreakToken, newTextToken]

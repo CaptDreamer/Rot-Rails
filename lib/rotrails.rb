@@ -1,4 +1,7 @@
 require "rot_rails/text"
+require "rot_rails/color"
+require "rot_rails/rng"
+require "rot_rails/core_ext"
 
 module RotRails
 

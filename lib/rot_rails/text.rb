@@ -41,7 +41,6 @@ module RotRails::Text
 		str.gsub(RE_COLORS) do |e|
 			# string before */
 			part = str[offset, str.index(e)-offset]
-			#puts "offset: #{offset} Index: #{str.index(e)} result: #{part}"
 			if (part.length > 0) 
 				result.push({
 					type: TYPE_TEXT,
@@ -112,7 +111,6 @@ module RotRails::Text
 			end
 
 			#/* token degenerated? */
-			#puts "tokenkiller: #{tokens}"
 			if (token[:value] == nil) 
 				tokens.delete_at(i)
 				next
@@ -156,19 +154,16 @@ module RotRails::Text
 
 
 		tokens.push({type: TYPE_NEWLINE}) #/* insert fake newline to fix the last text line */
-		#puts "tokens before: #{tokens}"
 		#/* remove trailing space from text tokens before newlines */
 		lastTextToken = nil
 		for i in 0..tokens.length-1
 			token = tokens[i]
-			#puts "token: #{token} lastTextToken: #{lastTextToken}"
 			case (token[:type])
 				when TYPE_TEXT 
 					lastTextToken = token 
 
 				when TYPE_NEWLINE
 					if (lastTextToken != nil) # /* remove trailing space */
-						#puts "lastTextToken: #{lastTextToken}"
 						arr = lastTextToken[:value].split("")
 						while (arr[arr.length-1] == " ") 
 						 	arr.pop()
@@ -186,7 +181,6 @@ module RotRails::Text
 	end
 
 	def self.breakInsideToken(tokens, tokenIndex, breakIndex, removeBreakChar)
-		#puts "Entered breakInsideToken"
 		newBreakToken = {
 			type: TYPE_NEWLINE
 		}
@@ -194,9 +188,7 @@ module RotRails::Text
 			type: TYPE_TEXT,
 			value: tokens[tokenIndex][:value][breakIndex + (removeBreakChar ? 1 : 0), tokens[tokenIndex][:value].length - breakIndex]
 		}
-		#puts "newBreakToken: #{newBreakToken} newTextToken: #{newTextToken}"
 		tokens[tokenIndex+1, 0] = [newBreakToken, newTextToken]
-		#puts "Ending breakInsideToken"
 		return tokens[tokenIndex][:value][0, breakIndex]
 	end
 end

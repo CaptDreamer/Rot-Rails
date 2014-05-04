@@ -1,5 +1,7 @@
 module RotRails::Text
 	
+	# * Contains text tokenization and breaking routines
+
 	RE_COLORS = /%([bc]){([^}]*)}/
 
 	# token types */

@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "RNG" do
 	describe "getUniform" do
 		before do

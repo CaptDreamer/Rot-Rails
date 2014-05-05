@@ -1,4 +1,4 @@
-require "rotrails"
+require 'spec_helper'
 
 describe "EventQueue" do
 	it "should return added event" do

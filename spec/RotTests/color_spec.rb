@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "Color" do
 	describe "add" do
 		it "should add two colors" do

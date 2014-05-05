@@ -35,7 +35,7 @@ Simply include this gem in your gemfile
 
 # Special Thanks!
 
-This project would not be possible without the great roguelike community, Ondra (writer of ROT.js), The Chronicles of Doryen (Original Roguelike toolkit), and all you great fans.
+This project would not be possible without the great roguelike community, Ondras (writer of ROT.js), The Chronicles of Doryen (Original Roguelike toolkit), and all you great fans.
 
-Ondra Github: https://github.com/ondras/rot.js
+Ondras Github: https://github.com/ondras/rot.js
 The Chronicles of Doryen: http://doryen.eptalys.net/libtcod/

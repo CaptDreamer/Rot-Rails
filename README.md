@@ -25,7 +25,6 @@ Simply include this gem in your gemfile
 ## Unavailable (Work-in-progress)
 
 * Display
-
 * FOV
 * Lighting
 * Number processing

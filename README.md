@@ -6,7 +6,7 @@ This gem will provide full integration for Ruby on Rails for the RogueLike Toolk
 
 Simply include this gem in your gemfile
 
-    gem 'rotrails'
+    gem 'rotrails' 'https://github.com/CaptDreamer/Rot-Rails.git'
 
 ## Finished Features
 

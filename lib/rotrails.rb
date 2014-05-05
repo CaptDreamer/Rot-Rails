@@ -1,8 +1,8 @@
-require "rot_rails/text"
-require "rot_rails/color"
-require "rot_rails/rng"
-require "rot_rails/core_ext"
-require "rot_rails/eventqueue"
+require_relative "rot_rails/text"
+require_relative "rot_rails/color"
+require_relative "rot_rails/rng"
+require_relative "rot_rails/core_ext"
+require_relative "rot_rails/eventqueue"
 
 module RotRails
 

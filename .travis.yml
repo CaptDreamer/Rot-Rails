@@ -1,5 +1,5 @@
 language: ruby
-#install: ruby -S bundle install
+install: ruby -S bundle install
 rvm:
   - "1.9.3"
   # - jruby-18mode # JRuby in 1.8 mode

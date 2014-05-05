@@ -15,6 +15,8 @@ Simply include this gem in your gemfile
 * RNG
 * Text
 * Array randomization
+* Engine
+* Scheduler
 
 ## Partially Complete
 
@@ -23,12 +25,11 @@ Simply include this gem in your gemfile
 ## Unavailable (Work-in-progress)
 
 * Display
-* Engine
+
 * FOV
 * Lighting
 * Number processing
 * String Generator
-* Scheduler
 * Maps
 * Noise Generation
 * Pathing

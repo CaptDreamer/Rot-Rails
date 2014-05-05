@@ -54,7 +54,7 @@ class RotRails::EventQueue
 		time = @eventTimes.delete_at(0)
 		if (time > 0)  # * advance 
 			@time += time
-			for i in 0..@eventTimes.length-1  
+			for i in 0..@eventTimes.length - 1
 				@eventTimes[i] -= time 
 			end
 		end

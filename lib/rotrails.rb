@@ -3,6 +3,8 @@ require_relative "rot_rails/color"
 require_relative "rot_rails/rng"
 require_relative "rot_rails/core_ext"
 require_relative "rot_rails/eventqueue"
+require_relative "rot_rails/engine"
+require_relative "rot_rails/scheduler"
 
 module RotRails
 

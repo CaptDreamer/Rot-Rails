@@ -1,8 +1,8 @@
 language: ruby
-install: ruby -S bundle install
+#install: ruby -S bundle install
 rvm:
   - "1.9.3"
-  - jruby-18mode # JRuby in 1.8 mode
-  - jruby-19mode # JRuby in 1.9 mode
-  - rbx
+  # - jruby-18mode # JRuby in 1.8 mode
+  # - jruby-19mode # JRuby in 1.9 mode
+  # - rbx
 script: rspec spec

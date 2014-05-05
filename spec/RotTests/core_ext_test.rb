@@ -1,4 +1,4 @@
-describe("JS", function() {
+describe("Core_Ext", function() {
 	describe("String", function() {
 		describe("::capitalize", function() {
 			it("should capitalize first letter", function() {
